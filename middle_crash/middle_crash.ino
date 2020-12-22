@@ -22,7 +22,7 @@ int descIndex;
 
 void setup() { 
     FastLED.addLeds<WS2813, DATA_PIN, COLOR_MODE>(leds, NUM_LEDS);
-    LEDS.setBrightness(80);
+    LEDS.setBrightness(100);
 }
 
 void fadeall() { for(int i = 0; i < NUM_LEDS; i++) { leds[i].nscale8(250); } }
