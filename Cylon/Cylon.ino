@@ -16,7 +16,7 @@ void setup() {
 	Serial.begin(57600);
 	Serial.println("resetting");
 	LEDS.addLeds<WS2813,DATA_PIN,GRB>(leds,NUM_LEDS);
-	LEDS.setBrightness(150);
+	LEDS.setBrightness(80);
 }
 
 void fadeall() { for(int i = 0; i < NUM_LEDS; i++) { leds[i].nscale8(252); } }
